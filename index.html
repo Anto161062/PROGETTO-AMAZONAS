@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catalogo Best Seller AMAZONAS</title>
+  <title>Catalogo Best seller - Linea Amazonas</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -22,6 +22,14 @@
       padding: 1.5em;
       margin-bottom: 1.5em;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: flex;
+      gap: 1.5em;
+      align-items: center;
+    }
+    .prodotto img {
+      width: 100px;
+      height: auto;
+      border-radius: 8px;
     }
     .prodotto h2 {
       margin: 0 0 0.5em 0;
@@ -35,16 +43,24 @@
       font-weight: bold;
       color: #007e3a;
     }
+    .info {
+      flex: 1;
+    }
+    .azioni a {
+      display: inline-block;
+      margin-top: 0.5em;
+      padding: 0.5em 1em;
+      background-color: #007e3a;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 0.9em;
+    }
     footer {
       text-align: center;
       margin-top: 3em;
       font-size: 0.9em;
       color: #777;
-    }
-    .link-catalogo {
-      color: #007e3a;
-      text-decoration: none;
-      font-weight: bold;
     }
   </style>
 </head>
@@ -52,78 +68,24 @@
   <h1>Catalogo Best Seller - Linea AMAZONAS</h1>
 
   <div class="prodotto">
-    <h2>Acai Biologico in polvere puro</h2>
-    <p class="categoria">Frutti Superfood</p>
-    <p class="prezzo">€14,60 – 80g</p>
-    <p>Superfood molto richiesto per l'effetto antiossidante e detox.</p>
+    <img src="https://anto161062.github.io/catalogo/assets/img/amazonas/acai.jpg" alt="Acai">
+    <div class="info">
+      <h2>Acai Biologico in polvere puro</h2>
+      <p class="categoria">Frutti Superfood</p>
+      <p class="prezzo">€14,60 – 80g</p>
+      <p>Superfood molto richiesto per l'effetto antiossidante e detox.</p>
+      <div class="azioni">
+        <a href="https://wa.me/393717771328?text=Ciao%2C%20vorrei%20ordinare%20Acai%20in%20polvere%20dal%20catalogo%20Amazonas." target="_blank">Ordina via WhatsApp</a>
+        <a href="https://forms.gle/123456789Amazonas" target="_blank">Ordina tramite Modulo</a>
+      </div>
+    </div>
   </div>
 
-  <div class="prodotto">
-    <h2>Acerola Bio 30% Vitamina C pura</h2>
-    <p class="categoria">Frutti Superfood</p>
-    <p class="prezzo">€24,50 – 100g</p>
-    <p>Vitamina C naturale bio, molto usata in inverno e nei mix immunitari.</p>
-  </div>
-
-  <div class="prodotto">
-    <h2>Guaranà Bio in polvere puro</h2>
-    <p class="categoria">Energia Naturale</p>
-    <p class="prezzo">€12,80 – 100g</p>
-    <p>Usato per energia naturale senza picchi glicemici. Sostituto del caffè.</p>
-  </div>
-
-  <div class="prodotto">
-    <h2>Maca Bio in polvere pura</h2>
-    <p class="categoria">Energia Naturale</p>
-    <p class="prezzo">€6,95 – 100g</p>
-    <p>Adattogeno per energia mentale e sessuale. Prezzo molto competitivo.</p>
-  </div>
-
-  <div class="prodotto">
-    <h2>Moringa Bio in polvere pura</h2>
-    <p class="categoria">Benessere Generale</p>
-    <p class="prezzo">€19,20 – 200g</p>
-    <p>Considerata "albero miracoloso", ricca di vitamine e minerali.</p>
-  </div>
-
-  <div class="prodotto">
-    <h2>Olio di Cumino Nero Bio</h2>
-    <p class="categoria">Oli e Grassi</p>
-    <p class="prezzo">€12,95 – 100ml</p>
-    <p>Rafforza il sistema immunitario. Molto conosciuto in erboristeria.</p>
-  </div>
-
-  <div class="prodotto">
-    <h2>Succo di Aloe Vera Bio</h2>
-    <p class="categoria">Benessere Pelle e Corpo</p>
-    <p class="prezzo">€19,75 – 1L</p>
-    <p>Ottimo per digestione, detox e salute intestinale.</p>
-  </div>
-
-  <div class="prodotto">
-    <h2>Chlorella Bio compresse</h2>
-    <p class="categoria">Depurazione Naturale</p>
-    <p class="prezzo">€14,60 – 120g (300 compresse)</p>
-    <p>Supporta l'eliminazione dei metalli pesanti. Usata nei protocolli detox.</p>
-  </div>
-
-  <div class="prodotto">
-    <h2>Chlorella + Spirulina compresse</h2>
-    <p class="categoria">Depurazione Naturale</p>
-    <p class="prezzo">€22,95 – 300g (750 compresse)</p>
-    <p>Unisce la forza depurativa alla nutrizione completa.</p>
-  </div>
-
-  <div class="prodotto">
-    <h2>Lapacho – Corteccia in tè</h2>
-    <p class="categoria">Tisane e Radici</p>
-    <p class="prezzo">€29,90 – 1kg</p>
-    <p>Tisana conosciuta per rafforzare il sistema immunitario. Naturale ed efficace.</p>
-  </div>
+  <!-- Altri prodotti simili da aggiungere qui -->
 
   <footer>
     Per info o ordini: WhatsApp 371 7771328 – 
-    <a class="link-catalogo" href="https://anto161062.github.io/catalogo/" target="_blank">Catalogo completo</a>
+    <a href="https://anto161062.github.io/catalogo/" target="_blank">Catalogo completo</a>
   </footer>
 </body>
 </html>
